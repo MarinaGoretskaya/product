@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prod.component.css']
 })
 export class ProdComponent implements OnInit {
-
+  product = {
+    name: 'Товар',
+    price: 'Цена',
+    color: 'Цвет'
+  }
   constructor() { }
 
   ngOnInit() {
