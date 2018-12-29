@@ -15,5 +15,4 @@ export class ProdComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

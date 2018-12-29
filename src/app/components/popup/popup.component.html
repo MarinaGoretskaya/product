@@ -1,0 +1,17 @@
+<div>
+  <span class="title">Выбор товара:</span>
+  <ag-grid-angular
+    style="width: 500px; height: 500px;"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [enableFilter]="true"
+    [columnDefs]="columnDefs"
+  >
+  </ag-grid-angular>
+</div>
+
+<div>
+  <button type="button" class="btn btn-success" (click)="addProduct(nameProd)>ОК</button>
+  <!--(click)="closed.next()-->
+  <button type="button" class="btn btn-dark" (click)="closed.next()">Закрыть</button>
+</div>

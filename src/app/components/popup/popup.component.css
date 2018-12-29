@@ -1,0 +1,25 @@
+:host {
+  position: absolute;
+  top: 20%;
+  left: 250px;
+  right: 250px;
+  background: white;
+  min-height: 150px;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid black;
+  font-size: 24px;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 20px;
+}
+
+button {
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+}

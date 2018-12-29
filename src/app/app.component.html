@@ -1,2 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-prod></app-prod>
+
+
+
+<button type="button" class="btn btn-primary" (click)="popup.showPopup()">Выбрать</button>
+<button type="button" class="btn btn-secondary" (click)="popup.showAsElement(input.value)">Удалить</button>
+<div>
+  {{name}} {{price}} {{color}}.
+</div>
+
