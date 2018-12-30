@@ -41,4 +41,30 @@ export class PopupComponent {
     {name: 'Товар 2', price: 3.5, color: 'зеленый'},
     {name: 'Товар 3', price: 4.0, color: 'синий'}
   ];
+
+  selectedColor = '';
+
+  colors = [
+    {
+      name: 'red',
+      value: '#b72b1e'
+    },
+    {
+      name: 'green',
+      value: '#0a9f2d'
+    },
+    {
+      name: 'blue',
+      value: '#0000ff'
+    }
+  ];
+
+  onChange(value){
+    this.selectedColor = value;
+  }
+
+  /*onClick = new EventEmitter<string>();
+
+  }*/
+
 }

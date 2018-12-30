@@ -1,7 +1,7 @@
 <div>
   <span class="title">Выбор товара:</span>
   <ag-grid-angular
-    style="width: 500px; height: 500px;"
+    style="width: 620px; height: 200px"
     class="ag-theme-balham"
     [rowData]="rowData"
     [enableFilter]="true"
@@ -10,8 +10,13 @@
   </ag-grid-angular>
 </div>
 
+<select (change)="onChange($event.target.value)" [ngStyle]="{'background-color':selectedColor}">
+  <option *ngFor="let color of colors" [value]="color.value" [ngStyle]="{'background-color':color.value}">{{color.name}}</option>
+</select>
+
 <div>
-  <button type="button" class="btn btn-success" (click)="addProduct(nameProd)>ОК</button>
-  <!--(click)="closed.next()-->
+  <button type="button" class="btn btn-success" (click)="addProduct()">ОК</button>
+  <!---->
+
   <button type="button" class="btn btn-dark" (click)="closed.next()">Закрыть</button>
 </div>

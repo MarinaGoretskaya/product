@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProdComponent } from './components/prod/prod.component';
+/*import { ProdComponent } from './components/prod/prod.component';*/
 import { PopupComponent } from './components/popup/popup.component';
 import { PopupService } from './popup.service';
 import { AgGridModule } from 'ag-grid-angular';
@@ -14,7 +14,7 @@ import { AgGridModule } from 'ag-grid-angular';
 @NgModule({
   declarations: [
     AppComponent,
-    ProdComponent,
+    /*ProdComponent,*/
     PopupComponent
   ],
   imports: [

@@ -10,13 +10,23 @@ import { PopupComponent } from './components/popup/popup.component';
 })
 export class AppComponent {
   title = 'Выберите товар';
+  product = {
+    name: 'Товар',
+    price: 'Цена',
+    color: 'Цвет'
+  };
+
   constructor(injector: Injector, public popup: PopupService) {
     // Convert `PopupComponent` to a custom element.
     const PopupElement = createCustomElement(PopupComponent, {injector});
     // Register the custom element with the browser.
     customElements.define('popup-element', PopupElement);
   }
+
+
 }
+
+
 
 
 
