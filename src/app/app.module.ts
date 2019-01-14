@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { PopupService } from './popup.service';
 import { AgGridModule } from 'ag-grid-angular';
+import { MainComponent } from './components/main/main.component';
 
 
 
@@ -15,7 +16,8 @@ import { AgGridModule } from 'ag-grid-angular';
   declarations: [
     AppComponent,
     /*ProdComponent,*/
-    PopupComponent
+    PopupComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
 <h5 [ngClass]="{title: true}">Выберите товар</h5>
 
-<button type="button" class="btn btn-primary" (click)="popup.showPopup()">Выбрать</button>
-<button type="button" class="btn btn-secondary" (click)="popup.showAsElement()">Удалить</button>
-<div>
-  {{prodName}} {{prodPrice}} {{prodColor}}
-</div>
 
+<button type="button" class="btn btn-primary" (click)="popup.showPopup()">Выбрать</button>
+<button type="button" class="btn btn-secondary" (click)="deleteProduct()">Удалить</button>
+
+<app-main></app-main>
+<div ([ngModel]) = "prodName"></div>
 
 
 

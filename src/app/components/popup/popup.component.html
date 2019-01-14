@@ -1,11 +1,17 @@
 <div>
   <span class="title">Выбор товара:</span>
+
+
   <ag-grid-angular
+    #agGrid
     style="width: 620px; height: 200px"
     class="ag-theme-balham"
     [rowData]="rowData"
     [enableFilter]="true"
     [columnDefs]="columnDefs"
+    (cellClicked)="addProduct(rowData)"
+    [enableSorting]="true"
+    rowSelection="multiple"
   >
   </ag-grid-angular>
 </div>
@@ -16,7 +22,13 @@
 
 <div>
   <button type="button" class="btn btn-success" (click)="addProduct()">ОК</button>
-  <!---->
+
+
 
   <button type="button" class="btn btn-dark" (click)="closed.next()">Закрыть</button>
 </div>
+
+
+
+
+

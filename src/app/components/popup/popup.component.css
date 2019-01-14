@@ -23,13 +23,14 @@ button {
   font-size: 15px;
   margin-left: 5px;
 }
-.ag-grid-angular {
-  background-color: darkslategray;
-}
+
 select {
   width: 100px;
 }
 
 option {
   font-size: 15px;
+}
+.productStyle {
+  cursor: pointer;
 }

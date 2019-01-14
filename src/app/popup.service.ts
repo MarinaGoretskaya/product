@@ -36,17 +36,8 @@ export class PopupService {
   }
 
   // This uses the new custom-element method to add the popup to the DOM.
-  showAsElement() {
-    // Create element
-    const popupEl: NgElement & WithProperties<PopupComponent> = document.createElement('popup-element') as any;
-
-    // Listen to the close event
-    popupEl.addEventListener('closed', () => document.body.removeChild(popupEl));
-
-    // Set the message
-    popupEl.message = defaultStatus;
-
-    // Add to the DOM
-    document.body.appendChild(popupEl);
-  }
+  /*deleteProduct(product) {
+    for (let i = 0; i < products[i] == product)
+      this.products.splice(i, 1);
+  }*/
 }

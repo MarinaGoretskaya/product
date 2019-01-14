@@ -1,0 +1,3 @@
+<select (change)="onChange($event.target.value)" [ngStyle]="{'background-color':selectedColor}">
+  <option *ngFor="let color of colors" [value]="color.value" [ngStyle]="{'background-color':color.value}">{{color.name}}</option>
+</select>
